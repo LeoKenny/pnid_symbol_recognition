@@ -1,0 +1,6 @@
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+Eramia_dataset
+!Eramia_dataset/.gitkeep
+

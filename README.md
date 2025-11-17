@@ -1,6 +1,6 @@
 # On P\&ID Symbol Recognition using Transformers
 
-This repository contains the code for the paper **"On P\&ID Symbol Recognition using Transformers"**. This project investigates the use of transformer-based object detection, specifically the **DEtection TRansformer (DETR)** model, for recognizing symbols in Piping and Instrumentation Diagrams (P\&IDs).
+This repository contains the code for the paper **“On P\&ID Symbol Recognition using Transformers”**. This project investigates the use of transformer-based object detection, specifically the **DEtection TRansformer (DETR)** model, for recognizing symbols in Piping and Instrumentation Diagrams (P\&IDs).
 
 The primary goal is to address the challenge of automatically digitizing P\&IDs, which are often locked in non-machine-readable formats like PDF or DWG. Robust, automated symbol detection is a critical first step toward creating machine-interpretable graphs, enabling digital twins, and advancing automation in industrial facilities.
 
@@ -35,9 +35,13 @@ The key finding is that **domain-specific pretraining (PIDClassify) consistently
 Follow the [pixi installation](https://pixi.sh/latest/installation/) steps and then execute the environment installation:
 ```bash
 git clone https://github.com/LeoKenny/pnid_symbol_recognition.git
-cd pnid_symbol_recognitiop
-pixi install
+cd pnid_symbol_recognition
+pixi shell
+jupyter lab
 ```
+
+### Dataset
+Place your custom dataset inside the `Eramia_dataset` folder.
 
 ### Notebooks
 Training DETR Model: `detr_augmented.ipynb`
@@ -48,4 +52,7 @@ Evaluating DETR Model: `detr_evaluation.ipynb`
 
 If you use this work in your research, please cite the original paper:
 
-Leonardo K. T. da Cunha, Eduardo F. Leite, Lucas Eduardo C. Morais, Alessandra Harrison, and João F. Valiati. "On P\&ID Symbol Recognition using Transformers."
+Leonardo K. T. da Cunha, Eduardo F. Leite, Lucas Eduardo C. Morais, Alessandra Harrison, and João F. Valiati. “On P\&ID Symbol Recognition using Transformers”
+
+## Acknowledgments
+This research was carried out in association with the ongoing R\&D project registered as ANP nº 24520-9 “3D APT: 3D Automated Perception and Tagging” (SENAI/Shell Brazil/ANP), sponsored by Shell Brasil Petróleo Ltda under the ANP R\&D levy as “Compromisso de Investimentos com Pesquisa e Desenvolvimento”. We also thank all contributors from SENAI which are not named authors, but helped develop tasks related to the results shown.
